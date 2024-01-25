@@ -14,32 +14,32 @@ public class CommonDivisor {
 		do {
 			// Prompting the user to enter an integer and storing it within the variable num1.
 			System.out.print("\nEnter the first integer: ");
-            int num1 = scanner.nextInt();
+            		int num1 = scanner.nextInt();
 
-            // Prompting the user to enter a second integer and storing it within the variable num2.
-            System.out.print("Enter the second integer: ");
-            int num2 = scanner.nextInt();
+          		// Prompting the user to enter a second integer and storing it within the variable num2.
+         		System.out.print("Enter the second integer: ");
+        		int num2 = scanner.nextInt();
             
-            // Calculating the GCD of num1 and num2 as well as printing the result.
-            int gcd = calculateGCD(num1, num2);
-            System.out.println("The greatest common divisor for " + num1 + " and " + num2 + " is " + gcd);
+            		// Calculating the GCD of num1 and num2 as well as printing the result.
+            		int gcd = calculateGCD(num1, num2);
+            		System.out.println("The greatest common divisor for " + num1 + " and " + num2 + " is " + gcd);
             
-            // Prompting the user if they would like to enter a third integer.
-            System.out.print("\nWould you like to include a third integer? (Y/N): ");
-            // If the user enters "Y" then the program will continue into the next prompt.
-            if (scanner.next().equalsIgnoreCase("Y")) {
-            	// Prompting the user to enter a third integer and storing it within the variable num3.
-                System.out.print("Enter the third integer: ");
-                int num3 = scanner.nextInt();
-                // Calculating the GCD of num1, num2, and num3 as well as printing the result.
-                gcd = calculateGCD(gcd, num3);
-                System.out.println("The greatest common divisor for " + num1 + ", " + num2 + ", and " + num3 + " is " + gcd);
-            }
+            		// Prompting the user if they would like to enter a third integer.
+            		System.out.print("\nWould you like to include a third integer? (Y/N): ");
+            		// If the user enters "Y" then the program will continue into the next prompt.
+            		if (scanner.next().equalsIgnoreCase("Y")) {
+            			// Prompting the user to enter a third integer and storing it within the variable num3.
+                		System.out.print("Enter the third integer: ");
+                		int num3 = scanner.nextInt();
+                		// Calculating the GCD of num1, num2, and num3 as well as printing the result.
+                		gcd = calculateGCD(gcd, num3);
+                		System.out.println("The greatest common divisor for " + num1 + ", " + num2 + ", and " + num3 + " is " + gcd);
+            		}
 
-            // Prompting the user if they would like to find the GCD of another set of integers.
-            System.out.print("\nWould you like to find the GCD for another set of numbers? (Y/N): ");
+            		// Prompting the user if they would like to find the GCD of another set of integers.
+            		System.out.print("\nWould you like to find the GCD for another set of numbers? (Y/N): ");
 			
-        // If the user enters anything other than "Y" then the program will exit.
+        	// If the user enters anything other than "Y" then the program will exit.
 		} while (scanner.next().equalsIgnoreCase("Y"));
 		
 		// Closing the scanner.
